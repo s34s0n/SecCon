@@ -288,15 +288,14 @@ fi
 
 
 printf "\n"
-printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m Serveo.net (SSH Tunneling, Best!)\e[0m\n"
-printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m Ngrok\e[0m\n"
-default_option_server="1"
-read -p $'\n\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Choose a Port Forwarding option: \e[0m\en' option_server
-option_server="${option_server:-${default_option_server}}"
-if [[ $option_server == 1 || $option_server == 01 ]]; then
-startx
 
-elif [[ $option_server == 2 || $option_server == 02 ]]; then
+default_option_server="1"
+#read -p $'\n' option_server
+option_server="${option_server:-${default_option_server}}"
+#if [[ $option_server == 1 || $option_server == 01 ]]; then
+#startx
+
+if [[ $option_server == 1 || $option_server == 01 ]]; then
 start
 else
 printf "\e[1;93m [!] Invalid option!\e[0m\n"
