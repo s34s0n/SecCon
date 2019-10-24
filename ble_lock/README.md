@@ -69,16 +69,16 @@ We intercept the different requests being sent from the app which we will later 
 
       {"barcode":"https://app.oklok.com.cn/app.html?id=<BARCODE>"}
     
-   * To which we get the follwing response
+ * To which we get the follwing response
                         
-         HTTP/1.1 200 
-         Server: nginx/1.13.3
-        Date: Sat, 21 Sep 2019 05:29:38 GMT
-    Content-Type: application/json
-    Content-Length: 409
-    Connection: close
+       HTTP/1.1 200 
+       Server: nginx/1.13.3
+       Date: Sat, 21 Sep 2019 05:29:38 GMT
+       Content-Type: application/json
+       Content-Length: 409
+       Connection: close
 
-    {"result":{"account":"<USER EMAILID>","alarm":0,"barcode":"<BARCODE>","chipType":"1","createAt":"   <DATE&TIME","deviceId":"","electricity":"91","firmwareVersion":"2.3","gsmVersion":"","id":<LOCKID>,"isLock":0,"lockKey":"40,1,61,18,20,24,18,8,52,57,36,96,91,1,87,20","lockPwd":"000000","mac":"<MAC ADDRESS>","name":"LOCK NAME","radioName":"BlueFPL","type":0,"userId":<USER ID>},"status":"2000"}
+       {"result":{"account":"<USER EMAILID>","alarm":0,"barcode":"<BARCODE>","chipType":"1","createAt":"   <DATE&TIME","deviceId":"","electricity":"91","firmwareVersion":"2.3","gsmVersion":"","id":<LOCKID>,"isLock":0,"lockKey":"40,1,61,18,20,24,18,8,52,57,36,96,91,1,87,20","lockPwd":"000000","mac":"<MAC ADDRESS>","name":"LOCK NAME","radioName":"BlueFPL","type":0,"userId":<USER ID>},"status":"2000"}
 
 
 
