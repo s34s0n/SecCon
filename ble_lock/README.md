@@ -1,4 +1,4 @@
-# EXPOSING THE VULNURABILITES OF THE FB50 SMART LOCK<
+# EXPOSING THE VULNURABILITES OF THE FB50 SMART LOCK
 
 ## CVE Number
 
@@ -14,22 +14,16 @@ CVE-2019-13143
      * https://www.sz-mica.com/fb50.html
 
 ## How the lock works
+
 * The FB50 pairs to a phone via Bluetooth, and requires the OKLOK app to function. The app requires the user to create an account before further functionality is available. It also facilitates configuring the fingerprint, and unlocking from a range via Bluetooth. 
+    
     * Thus the 2 methods of unlocking it are:
         * By scanning the registered fingerprint.
         * By using the companion Android app when in it’s vicinity. 
           
 ## The “OKLOK” app
 
-
-
-
-
-
-
-
-
-
+![OKLOCK logo](/Images/Screenshot_20190920-144634_cropped(1).png)
 
 
 
@@ -42,11 +36,12 @@ Here, we have decided to focus on the Android app method.
       
 ## Using Burpsuite
 
-   * Before we start performing the exploit, we require the servises of Burpsuite.
-   * Burp Suite is an integrated platform for performing security testing of web applications that is usually used to pentest web applications by industry proffesionals
-   * It operates as a web proxy server, and sits as a man-in-the-middle between the browser and destination web servers. This allows the interception, inspection and modification of the raw traffic passing in both directions
+* Before we start performing the exploit, we require the servises of Burpsuite.
+* Burp Suite is an integrated platform for performing security testing of web applications that is usually used to pentest web applications by industry proffesionals
+* It operates as a web proxy server, and sits as a man-in-the-middle between the browser and destination web servers. This allows the interception, inspection and modification of the raw traffic passing in both directions
+* The free community version can be downloaded from [here](https://portswigger.net/burp/communitydownload)
 
-
+![BurpSuite](/Images/burpsuite logo.png)
 
 
 
