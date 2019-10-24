@@ -36,15 +36,15 @@ CVE-2019-13143
 ## Our objective
 
 Our objective in this project was to try to open or pick the lock and this could be done in 2 ways
-        * The BLE(Bluetooth Low Energy) method
-        * The Android app method.
+* The BLE(Bluetooth Low Energy) method
+* The Android app method.
 Here, we have decided to focus on the Android app method.
       
 ## Using Burpsuite
 
-    * Before we start performing the exploit, we require the servises of Burpsuite.
-    * Burp Suite is an integrated platform for performing security testing of web applications that is usually used to pentest web applications by industry proffesionals
-    * It operates as a web proxy server, and sits as a man-in-the-middle between the browser and destination web servers. This allows the interception, inspection and modification of the raw traffic passing in both directions
+   * Before we start performing the exploit, we require the servises of Burpsuite.
+   * Burp Suite is an integrated platform for performing security testing of web applications that is usually used to pentest web applications by industry proffesionals
+   * It operates as a web proxy server, and sits as a man-in-the-middle between the browser and destination web servers. This allows the interception, inspection and modification of the raw traffic passing in both directions
 
 
 
@@ -62,14 +62,15 @@ The entire exploit is a 3 step process consisting of authenticated HTTP requests
 We start by connecting the Android device through our proxy made using Burpsuite.
 As we turn the “Intercept” option on, all requests from the Android device are intercepted by Burpsuite.
 We intercept the different requests being sent from the app which we will later modify.
-Step 1
 
-    • We proceed to use the “Repeater” feature of Burpsuite to send requests directly to the FB50 smart lock
-    • For example, we send the request 
+### Step 1
+
+   * We proceed to use the “Repeater” feature of Burpsuite to send requests directly to the FB50 smart lock
+   * For example, we send the request 
 
 
       
-    • To which we get the follwing response
+   * To which we get the follwing response
 
 
 
@@ -79,15 +80,15 @@ Step 1
 
 
 
-Step 2
+### Step 2
 
-    • And now that we have all necessary information, we shall proceed to unbind the lock from the victim’s device using the victim’s USER ID.
+   * And now that we have all necessary information, we shall proceed to unbind the lock from the victim’s device using the victim’s USER ID.
       
 
 
-Step 3
+### Step 3
 
-    • And now we proceed to bind it to the attacker’s device using the following command.
+   * And now we proceed to bind it to the attacker’s device using the following command.
 
 
 
