@@ -6,12 +6,12 @@ CVE-2019-13143
 
 ## Details
 * The FB50 smart lock
-      ** The FB50 smart lock is manufactured by Shenzhen Dragon Brother Technology Co. Ltd.
-      ** The look is sold under multiple brands on many ecommerse sites across the web.
-      ** It has an estimated 15k+ users.
+     * The FB50 smart lock is manufactured by Shenzhen Dragon Brother Technology Co. Ltd.
+     * The look is sold under multiple brands on many ecommerse sites across the web.
+     * It has an estimated 15k+ users.
 * Product URLs
-      ** https://www.chinasmartlocks.com/en/product/fb50-smart-padlock.html
-      ** https://www.sz-mica.com/fb50.html
+     * https://www.chinasmartlocks.com/en/product/fb50-smart-padlock.html
+     * https://www.sz-mica.com/fb50.html
 
 ## How the lock works
 * The FB50 pairs to a phone via Bluetooth, and requires the OKLOK app to function. The app requires the user to create an account before further functionality is available. It also facilitates configuring the fingerprint, and unlocking from a range via Bluetooth. 
