@@ -42,9 +42,9 @@ Here, we have decided to focus on the Android app method.
 * It operates as a web proxy server, and sits as a man-in-the-middle between the browser and destination web servers. This allows the interception, inspection and modification of the raw traffic passing in both directions
 * The free community version can be downloaded from [here](https://portswigger.net/burp/communitydownload)
 
-![BurpSuite](/Images/burpsuite logo.png)
-Format: ![Alt Text](url)
-
+<img src="/Images/burpsuite logo.png"
+     alt="BurpSuiteLogo"
+     style="float: left; margin-right: 10px;" />
 
 
 ## The exploit in brief
