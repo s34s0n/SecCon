@@ -1,4 +1,4 @@
-# <u>EXPOSING THE VULNURABILITES OF THE FB50 SMART LOCK</u>
+# EXPOSING THE VULNURABILITES OF THE FB50 SMART LOCK<
 
 ## CVE Number
 
@@ -15,10 +15,11 @@ CVE-2019-13143
 
 ## How the lock works
 * The FB50 pairs to a phone via Bluetooth, and requires the OKLOK app to function. The app requires the user to create an account before further functionality is available. It also facilitates configuring the fingerprint, and unlocking from a range via Bluetooth. 
-    ** Thus the 2 methods of unlocking it are:
-        ** By scanning the registered fingerprint.
-         By using the companion Android app when in it’s vicinity. 
-         The “OKLOK” app
+    * Thus the 2 methods of unlocking it are:
+        * By scanning the registered fingerprint.
+        * By using the companion Android app when in it’s vicinity. 
+          
+## The “OKLOK” app
 
 
 
@@ -94,11 +95,11 @@ Step 3
 
 ## Conclusion
 
-    • Thus, we have succesfully transfered control of the FB50 smart lock from the victiom’s app to the attacker’s app.
-    • The severity of this issue lies in the fact that the original owner completely loses access to their lock. They can’t even “rebind” to get back, since the current owner (the attacker) needs to authorize that.  
+   * Thus, we have succesfully transfered control of the FB50 smart lock from the victiom’s app to the attacker’s app.
+   * The severity of this issue lies in the fact that the original owner completely loses access to their lock. They can’t even “rebind” to get back, since the current owner (the attacker) needs to authorize that.  
 
 ## References
 
-    • FB50 Smart Lock Vulnerability Disclosure (CVE-2019-13143)
-    • https://blog.securelayer7.net/fb50-smart-lock-vulnerability-disclosure/
-    • https://icyphox.sh/blog/fb50/
+   * FB50 Smart Lock Vulnerability Disclosure (CVE-2019-13143)
+   * https://blog.securelayer7.net/fb50-smart-lock-vulnerability-disclosure/
+   * https://icyphox.sh/blog/fb50/
